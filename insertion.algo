@@ -1,0 +1,35 @@
+// tab = [10,2,5,1]
+// i=1 | j=0 | current = tab[1]
+// 10 > 2 true
+// tab = [ 2 ,10 ,5,1] / j=-1
+
+// _______________________________
+//  i=2 | j=1 | current= tab[2] : 5
+// tab = [ 2 ,5 ,10,1] / j =0
+
+// ___________________________
+
+// i=3 | j=2 | current: tab[3] : 1
+//tab = [ 2 ,5 ,10,10] / j=1
+// tab = [2,5,5,10] / j=0
+// tab = [2,2,5,10] / j=-1
+// tab = [1,2,5,10] / j=-1
+
+
+ALGORITHM insertion_sort
+VAR
+    tab : ARRAY_OF INTEGER[n];
+    n, i, j, current:INTEGER
+BEGIN
+    Read(n);
+    FOR i FROM 1 TO n STEP 1  DO
+        j:=i-1 
+        current:= tab[i]
+        WHILE (tab[j]> current and j>=0) DO
+            tab[j+1]:=tab[j]
+            j:=j-1
+        END_WHILE
+        tab[j+1]:=current
+    END_FOR
+    Write(tab)
+END

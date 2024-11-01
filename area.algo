@@ -1,0 +1,10 @@
+ALGORITHM area
+VAR
+    circleRadius, circleArea: FLOAT
+CONST
+    pi:FLOAT:=3.14
+BEGIN
+    Read(circleRadius)
+    circleArea:=circleRadius*circleRadius*pi
+    Write(circleArea)
+END

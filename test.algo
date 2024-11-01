@@ -1,0 +1,17 @@
+ALGORITHM sum_of_three_numbers
+VAR
+    firstNumber, secondNumber,thirdNumber, sum:FLOAT;
+BEGIN
+    Read(firstNumber)
+    Read(secondNumber)
+    Read(thirdNumber)
+    sum:=firstNumber+secondNumber+thirdNumber
+   Write(sum)
+    // double quotesz
+END
+
+// calculation of the circle's area
+// 1- Read the circle's radius
+// 2- Fix the pi value to 3.14
+// 3- Calculate the area with this equation circle's radius squared two multiplied by pi
+// 4- Return the result of the equation above

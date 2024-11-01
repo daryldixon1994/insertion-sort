@@ -1,0 +1,22 @@
+// v1(x1, y1)
+// v2(x2, y2)
+// x1*y2 === x2*y1
+// true | false
+
+ALGORITHM monthsOfTheYear
+VAR
+    monthNumber:INTEGER
+BEGIN
+
+ SWITCH (n) DO
+       
+        DEFAULT : Write("Go");
+        CASE 1 : Write("My");
+        CASE 2 : Write("Code");
+    END_SWITCH
+END
+
+// graduation
+// 1-Read the student's grade
+// 2-If the student's grade is greater than or equal 10: write "Admis" message.
+// 3-If the student's grade is lower that 10: write "Refusé" message.
